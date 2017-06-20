@@ -45,11 +45,11 @@ is probably more appropriate for your setup.
 
 ## Installation
 
-Add `vision_system_rpi0` to your list of dependencies in mix.exs:
+Add `nerves_system_rpi0_pyplus` to your list of dependencies in mix.exs:
 
 ```
   def deps do
-    [{:vision_system_rpi0, "~> 0.12.0"}]
+    [{:nerves_system_rpi0_pyplus, "~> 0.12.0"}]
   end
 ```
 [Image credit](#fritzing): This image is from the [Fritzing](http://fritzing.org/home/) parts library.

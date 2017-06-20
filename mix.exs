@@ -6,7 +6,7 @@ defmodule VisionRpi0.Mixfile do
     |> String.strip
 
   def project do
-    [app: :vision_system_rpi0,
+    [app: :nerves_system_rpi0_pyplus,
      version: @version,
      elixir: "~> 1.3",
      compilers: Mix.compilers ++ [:nerves_package],
@@ -36,6 +36,6 @@ defmodule VisionRpi0.Mixfile do
     [maintainers: ["Jaremy Creechley"],
     files: ["LICENSE", "mix.exs", "nerves_defconfig", "nerves.exs", "README.md", "VERSION", "rootfs-additions", "fwup.conf", "cmdline.txt", "linux-4.4.defconfig", "config.txt", "post-createfs.sh"],
      licenses: ["Apache 2.0"],
-     links: %{"Github" => "https://github.com/elcritch/vision_system_rpi0"}]
+     links: %{"Github" => "https://github.com/elcritch/nerves_system_rpi0_pyplus"}]
   end
 end

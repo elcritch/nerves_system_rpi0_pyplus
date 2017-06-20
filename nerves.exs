@@ -5,7 +5,7 @@ version =
   |> File.read!
   |> String.strip
 
-pkg = :vision_system_rpi0
+pkg = :nerves_system_rpi0_pyplus
 
 config pkg, :nerves_env,
   type: :system,
