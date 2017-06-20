@@ -6,21 +6,21 @@ Raspberry Pi Zero W.
 ![Fritzing Raspberry Pi Zero image](assets/images/raspberry-pi-model-zero.png)
 <br><sup>[Image credit](#fritzing)</sup>
 
-| Feature              | Description                     |
-| -------------------- | ------------------------------- |
-| CPU                  | 1 GHz ARM1176JZF-S              |
-| Memory               | 512 MB                          |
-| Storage              | MicroSD                         |
-| Linux kernel         | 4.4 w/ Raspberry Pi patches     |
-| IEx terminal         | OTG USB serial port (`ttyGS0`). Can be changed to HDMI or UART. |
-| GPIO, I2C, SPI       | Yes - Elixir ALE                |
-| ADC                  | No                              |
-| PWM                  | Yes, but no Elixir support      |
-| UART                 | 1 available - `ttyAMA0`         |
-| Camera               | Yes - via rpi-userland          |
-| Ethernet             | Yes - via OTG USB port          |
-| WiFi                 | Pi Zero W or IoT pHAT           |
-| Bluetooth            | Not supported yet               |
+| Feature        | Description                                                     |
+|:---------------|:----------------------------------------------------------------|
+| CPU            | 1 GHz ARM1176JZF-S                                              |
+| Memory         | 512 MB                                                          |
+| Storage        | MicroSD                                                         |
+| Linux kernel   | 4.4 w/ Raspberry Pi patches                                     |
+| IEx terminal   | OTG USB serial port (`ttyGS0`). Can be changed to HDMI or UART. |
+| GPIO, I2C, SPI | Yes - Elixir ALE                                                |
+| ADC            | No                                                              |
+| PWM            | Yes, but no Elixir support                                      |
+| UART           | 1 available - `ttyAMA0`                                         |
+| Camera         | Yes - via rpi-userland                                          |
+| Ethernet       | Yes - via OTG USB port                                          |
+| WiFi           | Pi Zero W or IoT pHAT                                           |
+| Bluetooth      | Not supported yet                                               |
 
 ## Supported OTG USB modes
 
@@ -45,11 +45,11 @@ is probably more appropriate for your setup.
 
 ## Installation
 
-Add `nerves_system_rpi0` to your list of dependencies in mix.exs:
+Add `vision_system_rpi0` to your list of dependencies in mix.exs:
 
 ```
   def deps do
-    [{:nerves_system_rpi0, "~> 0.12.0"}]
+    [{:vision_system_rpi0, "~> 0.12.0"}]
   end
 ```
 [Image credit](#fritzing): This image is from the [Fritzing](http://fritzing.org/home/) parts library.
