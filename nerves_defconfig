@@ -10,6 +10,7 @@ BR2_TOOLCHAIN_EXTERNAL_GCC_5=y
 BR2_TOOLCHAIN_EXTERNAL_HEADERS_3_12=y
 BR2_TOOLCHAIN_EXTERNAL_CUSTOM_GLIBC=y
 BR2_TOOLCHAIN_EXTERNAL_CXX=y
+BR2_TOOLCHAIN_BUILDROOT_FORTRAN=y # setup fortran compiler
 BR2_TARGET_GENERIC_HOSTNAME=""
 BR2_TARGET_GENERIC_ISSUE=""
 BR2_INIT_NONE=y
@@ -69,6 +70,31 @@ BR2_PACKAGE_ERLANG_HISTORY=y
 BR2_PACKAGE_NERVES_CONFIG=y
 BR2_PACKAGE_NERVES_CONFIG_NO_ERLINIT_CONF=y
 BR2_PACKAGE_NERVES_CONFIG_APPS="crypto"
+
+# ========================================================================= #
+# Networking and General Purpose
+# ========================================================================= #
+
+BR2_PACKAGE_MSGPACK=y
+BR2_PACKAGE_PROTOBUF=y
+BR2_PACKAGE_ZEROMQ=y
+BR2_PACKAGE_PROCPS=y
+
+# ========================================================================= #
+# BLAS, LAPACK, and Other Basic Libraries
+# ========================================================================= #
+
+BR2_PACKAGE_OPENBLAS_DEFAULT_TARGET="ARMV7"
+BR2_PACKAGE_OPENBLAS_ARCH_SUPPORTS=y
+BR2_PACKAGE_OPENBLAS=y
+BR2_PACKAGE_OPENBLAS_TARGET="ARMV7"
+
+BR2_PACKAGE_LAPACK=y
+BR2_PACKAGE_LAPACK_COMPLEX=y
+
+BR2_PACKAGE_FFTW=y
+BR2_PACKAGE_FFTW_PRECISION_DOUBLE=y
+BR2_PACKAGE_FFTW_FAST=y
 
 # ========================================================================= #
 # Python (extra setup for vision resources)
@@ -186,7 +212,7 @@ BR2_PACKAGE_PYTHON_JSON_SCHEMA_VALIDATOR=y
 BR2_PACKAGE_PYTHON_MBSTRDECODER=y
 # BR2_PACKAGE_PYTHON_MELD3 is not set
 # BR2_PACKAGE_PYTHON_MISTUNE is not set
-# BR2_PACKAGE_PYTHON_MSGPACK is not set
+BR2_PACKAGE_PYTHON_MSGPACK is not set
 # BR2_PACKAGE_PYTHON_MUTAGEN is not set
 # BR2_PACKAGE_PYTHON_MWCLIENT is not set
 # BR2_PACKAGE_PYTHON_MWSCRAPE is not set

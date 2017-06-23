@@ -1,5 +1,22 @@
 # Changelog
 
+## v10.13.1
+
+Setting up base package and getting everything to work
+
+## v10.13.2
+
+Adding extra Python support in addition to LAPACK/BLAS for SciPy support
+
+  * Extra libraries
+    * GFortran
+    * OpenBLAS
+    * LAPACK/BLAS
+    * MSGPAKC / PROTOBUF
+  * Extra commands
+    * procpc commands (ps, ...)
+    *
+
 ## v0.13.1
 
   * nerves_system_br v0.11.1

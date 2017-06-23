@@ -1,3 +1,9 @@
+# PyPlus Customizations
+
+Additional libraries useful for computational projects have been added.
+Extra Python support in addition to LAPACK/BLAS for SciPy support has been incorporated.
+Some common system utilities like `ps` and shells have been added as well. 
+
 # Raspberry Pi Model Zero
 
 This is the base Nerves System configuration for the Raspberry Pi Zero and
