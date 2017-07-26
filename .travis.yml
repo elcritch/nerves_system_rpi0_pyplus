@@ -60,7 +60,8 @@ before_deploy:
 deploy:
   # Deploy tagged releases to GitHub
   - provider: releases
-    api_key: $GITHUB_API_KEY
+    api_key:
+      secure: ZCaz/y1Dh8qwJDqQ6A5hxozm9vSHTCPxnyoLKclz8ltW4piA5BeeVEYIBoueup0z8DlNfsgeRC1aBz8yf3vzLs1jfn1JAu/Gjt8E4UI3nK3wPTH5NOTW4UTR8IzwTLzQRTzafqu4y7SKtTxTRoydiZQXFbY+rHV3VRnJj4LCynQWB8s9Y0ZCIHn7bxE0RYpy7RrjibFW4mOheY7MosVsEzfHr+RXdoQSNDLQjXcwlhNT5mJy4j/xkEoRITCI7HEE7x7OOCw0TouQjt0q/z4ndUn603yA1SIpxjzobRuZ7vjZrvwlQu9iVZBj7dxNPkHldes3HFuo2KRYAYKimO55jyQoipEuRs9QbN/wdQl7q74VY6Xy0kiXHYdP78zPaof3l3nfHt53JJ5fpJRHn2wtTLqD8lOUoNLXmbsOH03wgUMw7wxmhktnPmvKY28N1EXs9bsqc0IB3e4rWdEpK2PsKGMPFQbR6BQtAir9Q9y68xbBxfj/EQZNDJd9yl4/f1c7lqpmdN+GesXORPoeuGK03tWj6ezFgP47+XYbOFEiljb5qZ8kr2FozDudOWJ8A0lGdNHnYaOpcdgjietaBRosfQYv5il+FhzpxgR9D8W0q3GX9+Ey3xxwd7vu1VSM94rdhqahMm49YPzjpLIYedgqAqLbK2u+XaFanDR9/yrkbqY=
     file:
       - "artifacts/$CI_SYSTEM_NAME-$TRAVIS_TAG.tar.gz"
       - "artifacts/$CI_SYSTEM_NAME-$TRAVIS_TAG.fw"
@@ -69,18 +70,17 @@ deploy:
     on:
       repo: $REPO
       tags: true
-  - provider: s3
-    access_key_id: $S3_ID
-    secret_access_key: $S3_KEY
-    bucket: $S3_BUCKET
-    skip_cleanup: true
-    local_dir: artifacts
-    upload-dir: test
-    acl: public_read
-    on:
-      repo: $REPO
-      all_branches: true
-
+  # - provider: s3
+  #   access_key_id: $S3_ID
+  #   secret_access_key: $S3_KEY
+  #   bucket: $S3_BUCKET
+  #   skip_cleanup: true
+  #   local_dir: artifacts
+  #   upload-dir: test
+  #   acl: public_read
+  #   on:
+  #     repo: $REPO
+  #     all_branches: true
 # Display build log on failure
 after_failure:
   - tail -n 1000 $NERVES_PACKAGE/build.log
