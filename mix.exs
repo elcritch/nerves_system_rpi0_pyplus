@@ -36,6 +36,6 @@ defmodule VisionRpi0.Mixfile do
     [maintainers: ["Jaremy Creechley"],
     files: ["LICENSE", "mix.exs", "nerves_defconfig", "nerves.exs", "README.md", "VERSION", "rootfs-additions", "fwup.conf", "cmdline.txt", "linux-4.4.defconfig", "config.txt", "post-createfs.sh"],
      licenses: ["Apache 2.0"],
-     links: %{"Github" => "https://github.com/elcritch/nerves_system_rpi0_pyplus"}]
+     links: %{"Github" => "https://github.com/BrightAgrotech/nerves_system_rpi0_pyplus"}]
   end
 end
