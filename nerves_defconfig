@@ -80,6 +80,7 @@ BR2_PACKAGE_NERVES_CONFIG_APPS="crypto"
 # Networking and General Purpose
 # ========================================================================= #
 
+BR2_PACKAGE_BINDFS=y
 BR2_PACKAGE_OPENSSH=y
 BR2_PACKAGE_MSGPACK=y
 # BR2_PACKAGE_PROTOBUF=y
