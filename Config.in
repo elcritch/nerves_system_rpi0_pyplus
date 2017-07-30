@@ -32,3 +32,4 @@
 # BINDFS_LICENSE_FILES = COPYING
 #
 # $(eval $(autotools-package))
+# OPENSSH_CONF_OPTS += 
