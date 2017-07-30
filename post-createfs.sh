@@ -2,6 +2,8 @@
 
 set -e
 
+unzip -o -d $NERVES_DEFCONFIG_DIR/assets $NERVES_DEFCONFIG_DIR/assets/empty.ext4.zip
+
 FWUP_CONFIG=$NERVES_DEFCONFIG_DIR/fwup.conf
 
 # Run the common post-image processing for nerves
