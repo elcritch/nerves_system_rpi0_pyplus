@@ -9,7 +9,7 @@ all:
 	mix deps.get
 	mix compile
 	cd .nerves/artifacts/nerves_system_rpi0_pyplus-${VERSION}.armv6_rpi_linux_musl/ && \
-	make system
+	make V=1 system
 
 copy:
 	cp -v .nerves/artifacts/nerves_system_rpi0_pyplus-${VERSION}.armv6_rpi_linux_musl/images/nerves_system_rpi0_pyplus.fw $(OUTDIR)/nerves_system_rpi0_pyplus-v${VERSION}.fw
