@@ -16,6 +16,7 @@ echo "DONEDEBUG:::2 "
 
 
 unzip -o -d $NERVES_DEFCONFIG_DIR/assets $NERVES_DEFCONFIG_DIR/assets/empty.ext4.zip
+mv $NERVES_DEFCONFIG_DIR/assets/empty.ext4 $BINARIES_DIR/empty.ext4
 
 FWUP_CONFIG=$NERVES_DEFCONFIG_DIR/fwup.conf
 
